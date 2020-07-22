@@ -50,14 +50,16 @@ The DA group should be added to the following user rights in Computer Configurat
 
 https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/plan/security-best-practices/appendix-f--securing-domain-admins-groups-in-active-directory
 
+https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/initially-isolate-tier-0-assets-with-group-policy-to-start/ba-p/1184934
+
 ## Remediation 
 
-What is the attackers objective? 
-What system(s) does the attacker need to access to achieve those goals? 
-What account(s) would the attacker need to access those systems? 
-On what systems are the credentials for those accounts exposed?  
-How are those systems protected? 
-How could the attacker gain access to those systems?
-What other attack paths exist for an attacker to compromise those credentials? 
-How can we mitigate the attacker gaining access to those accounts? 
+-What is the attacker's objective? 
+-What system(s) does the attacker need to access to achieve those goals? 
+-What account(s) would the attacker need to access those systems? 
+-On what systems are the credentials for those accounts exposed?  
+-How are those systems protected? 
+-How could the attacker gain access to those systems?
+-What other attack paths exist for an attacker to compromise those credentials? 
+-How can we mitigate the attacker gaining access to those accounts? 
 
