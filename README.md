@@ -38,3 +38,14 @@ Microsoft guidance from [here](https://docs.microsoft.com/en-us/windows-server/i
 | NetworkCleartext                      | 8  | Password                                  | Yes                                                                   | IIS   Basic Auth (IIS 6.0 and newer);   Windows   PowerShell with CredSSP                                         |
 | NewCredentials                        | 9  | Password                                  | Yes                                                                   | RUNAS   /NETWORK                                                                                       |
 | RemoteInteractive                     | 10 | Password,   Smartcard,     other               | Yes                                                                   | Remote   Desktop (formerly known as "Terminal Services")                                               |
+
+## Domain Admin accounts 
+
+The DA group should be added to the following user rights in Computer Configuration\Policies\Windows Settings\Security Settings\Local Policies\User Rights Assignments:
+- Deny access to this computer from the network
+- Deny log on as a batch job
+- Deny log on as a service
+- Deny log on locally
+- Deny log on through Remote Desktop Services user rights
+
+https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/plan/security-best-practices/appendix-f--securing-domain-admins-groups-in-active-directory
