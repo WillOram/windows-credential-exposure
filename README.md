@@ -63,3 +63,12 @@ https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/initiall
 * What other attack paths exist for an attacker to compromise those credentials? 
 * How can we mitigate the attacker gaining access to those accounts? 
 
+## Remote desktop Restricted Admin mode
+
+> To prevent credentials from being stored on the remote machine, Restricted Admin changes the Remote Desktop protocol so that it uses network logons rather than an interactive logons for authentication. With this protection, establishing an RDP session will not require the associated password to be provided; instead the NT hash or Kerberos ticket of the user will be used for authentication.
+
+> Restricted Admin for both clients and servers has been backported to Windows 7 and Server 2008 but remains disabled by default on most standard Windows builds due to a couple of caveats surrounding its use.
+
+> We consider Restricted Admin mode an effective control to prevent the spread of administrative credentials across the network, thus making lateral movement more difficult, particularly in environments where tiering is not yet in place or has not yet been fully implemented. 
+
+https://labs.f-secure.com/blog/undisable/#:~:text=Restricted%20Admin%20mode%20for%20RDP,enabling%20many%20lateral%20movement%20techniques.&text=Because%20it%20uses%20network%20rather,the%20Remote%20Desktop%20protocol%20itself.
